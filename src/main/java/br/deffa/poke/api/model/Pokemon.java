@@ -18,6 +18,7 @@ public class Pokemon {
    private Integer id_px;
    private String name;
    private Boolean isShiny;
+   private Integer generate;
 
    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pokemon", fetch = FetchType.LAZY)
    private List<PokeImage> images;
